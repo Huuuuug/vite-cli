@@ -36,6 +36,7 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'vue/multi-word-component-names': ['error', { ignores: ['Index'] }], //需要忽略的组件名]
     'no-var': 'error',
     'prettier/prettier': 'error',
     // 禁止出现console
@@ -136,7 +137,6 @@ module.exports = {
     'switch-colon-spacing': 'warn',
     // 强制箭头函数的箭头前后使用一致的空格
     'arrow-spacing': 'warn',
-    'no-var': 'warn',
     'prefer-const': 'warn',
     'prefer-rest-params': 'warn',
     'no-useless-escape': 'warn',
