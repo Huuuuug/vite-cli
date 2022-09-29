@@ -16,7 +16,7 @@ server.interceptors.request.use(
     NProgress.start()
     return config
   },
-  (error) => {
+  error => {
     throw new Error(error)
   }
 )
@@ -26,7 +26,7 @@ server.interceptors.response.use(
   (response: AxiosResponse) => {
     NProgress.done()
   },
-  (error) => {
+  error => {
     NProgress.done()
     throw new Error(error)
   }
