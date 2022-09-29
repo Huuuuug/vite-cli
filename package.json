@@ -44,7 +44,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "pnpm prettier"
+      "prettier --write"
     ]
   },
   "config": {
