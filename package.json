@@ -44,7 +44,6 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "pnpm lint",
       "pnpm prettier"
     ]
   },
